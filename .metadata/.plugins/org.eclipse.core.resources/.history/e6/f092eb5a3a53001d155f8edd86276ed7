@@ -1,0 +1,33 @@
+
+public class Timer extends Thread{
+	private int n =0;
+	private boolean stop;
+	
+	
+	while(true) {
+	
+	}
+	while(!stop) {
+		try {
+			n++;
+			time();
+			sleep(1000);
+			if(n==10) {
+				System.out.println("시간종료");
+				stop=true;
+				break;
+			}
+			}
+			catch(Exception e) {
+				return;
+			}
+		
+	}
+	public void threadStop(boolean stop) {
+		this.stop = stop;
+	}
+	public int time() {
+		return n;
+	}
+
+}
