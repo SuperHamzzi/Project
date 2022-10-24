@@ -1,4 +1,2 @@
 INDEX VERSION 1.131+C:\Users\gksrn\OneDrive\바탕 화면\자바공부\프로젝트\.metadata\.plugins\org.eclipse.jdt.core
-1657330681.index
-237499996.index
 1956468967.index

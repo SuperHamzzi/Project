@@ -57,10 +57,14 @@ public class gameMain  extends Thread{
 					char[] mark = { '+', '-', '÷', '*' };
 					Scanner sc = new Scanner(System.in);
 					Timer tm = new Timer();
-					sign.start(); // 안내문
 					tm.setDaemon(true);
 					tm.start();
+					sign.start(); // 안내문
+					
+					
 					while (correct.isSolution()) { //오답이면 트루를 반환하고 끝냄
+						
+						
 						
 						int a = (int) (Math.random() * 9 + 1); //랜덤값
 						int b = (int) (Math.random() * 9 + 1);//랜덤값 지정
@@ -424,7 +428,7 @@ class Board {
 
 
 // 표지
-class Sign {
+class Sign{
 	public void start() {
 	System.out.println("==시간제한은 난이도별==");
 	System.out.println("======60초입니다=======");
@@ -437,7 +441,8 @@ class Correct {
 	private static boolean solution = true;
 	private static int count = 0;
 	private static int score = 0;
-
+	
+	
 	public void true1() {
 		System.out.println("정답입니다.");
 		count++;

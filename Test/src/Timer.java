@@ -4,6 +4,7 @@ public class Timer extends Thread{
 	
 	@Override
 	public void run() {
+
 			for(int i=5; i>=0; i--) {
 				if(correct.isSolution()==false) {
 				}
@@ -17,6 +18,7 @@ public class Timer extends Thread{
 				}
 				}
 				
-			}
+			
+	}
 	}
 }
